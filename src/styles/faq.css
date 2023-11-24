@@ -1,0 +1,24 @@
+.faq {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.accordion-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MuiAccordion-root {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.MuiAccordionDetails-root {
+    background-color: rgb(1, 74, 1);
+    color: white;
+    height: 100px;
+    height: auto;
+}

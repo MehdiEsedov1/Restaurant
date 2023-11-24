@@ -1,0 +1,21 @@
+.adds img {
+    height: 1000px;
+}
+
+@media only screen and (0 <=width <=900px) {
+    .adds img {
+        height: 250px;
+    }
+}
+
+@media only screen and (900px <=width <=1200px) {
+    .adds img {
+        height: 500px;
+    }
+}
+
+@media only screen and (1200px <=width <=1536px) {
+    .adds img {
+        height: 750px;
+    }
+}

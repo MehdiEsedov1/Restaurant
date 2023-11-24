@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import './styles/adds.css';
+import './styles/homepage.css';
+import './styles/footer.css';
+import './styles/menu.css';
+import './styles/registration.css';
+import './styles/payment.css';
+import './styles/basket.css';
+import './styles/header.css';
+import './styles/error.css';
+import './styles/faq.css';
+import './styles/aboutMeal.css';
+import './styles/about.css';
+import './styles/menuInner.css';
+import './styles/profile.css';
+import './styles/carousel.css';
+
+import Header from './components/Header';
+import Routess from './components/Additional/Routes';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div style={{
+        width: "100%",
+        height: "75px"
+      }}>
+      </div>
+      <Routess />
     </div>
   );
 }

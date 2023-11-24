@@ -1,0 +1,584 @@
+.payment {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 74, 1);
+    background-image: url('../Assets/background1.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img-containers {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.payment form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 60vh;
+    background-color: white;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+.payment input:focus {
+    outline: none;
+}
+
+.payment input {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: green 2px solid;
+}
+
+.payment-inputs-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.payment button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.75rem;
+    color: white;
+    background-color: rgb(1, 74, 1);
+    border: none;
+    cursor: pointer;
+}
+
+.payment button:hover {
+    background-color: rgb(3, 155, 3);
+}
+
+.payment-buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 150px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.payment p {
+    color: black;
+    margin-left: 20px;
+    margin-top: 3px;
+    font-size: 1rem;
+}
+
+.payment img {
+    width: 100px;
+    height: 100px;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.personal-info {
+    width: 20%;
+}
+
+.location {
+    width: 20%;
+}
+
+.time {
+    width: 20%;
+}
+
+.card-data {
+    width: 25%;
+    height: 250px;
+    background-color: whitesmoke;
+    border: grey 1px solid;
+    border-radius: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.card-data input {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: whitesmoke;
+    border-bottom: gray 2px solid;
+}
+
+.card-data p {
+    color: black;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    font-size: 1rem;
+}
+
+.card-data-inner {
+    display: flex;
+}
+
+.Year-Month {
+    width: 570px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.Year-Month input {
+    width: 20% !important;
+}
+
+.card-data input::placeholder {
+    font-size: 0.75rem;
+    color: gray;
+    font-weight: 600;
+}
+
+.Year-Month p {
+    color: grey;
+    font-size: 2rem;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+@media only screen and (0 <=width <=900px) {
+    .payment {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .payment form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 95%;
+        height: 700px;
+        font-size: 1.5rem;
+        margin-top: 100px;
+    }
+
+    .payment input {
+        width: 100%;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .payment-inputs-container {
+        width: 70%;
+        height: 300px;
+    }
+
+    .payment button {
+        width: 80%;
+        height: 40px;
+        font-size: 1.75rem;
+    }
+
+    .payment-buttons-container {
+        width: 70%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .payment p {
+        margin-left: 20px;
+        margin-top: 3px;
+        font-size: 1rem;
+    }
+
+    .payment img {
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-data img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .container {
+        width: 90%;
+        display: block;
+    }
+
+    .personal-info {
+        width: 100%;
+    }
+
+    .personal-info h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .location h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .time {
+        width: 100%;
+    }
+
+    .time h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .card-data {
+        width: 100%;
+        height: 200px;
+        border-radius: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 5px;
+    }
+
+    .card-data input {
+        width: 100%;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
+    .card-data p {
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        font-size: 1rem;
+    }
+
+    .Year-Month {
+        width: 90%;
+        margin-right: 5px;
+    }
+
+    .CVV {
+        margin-top: 10px;
+    }
+
+    .CVV input {
+        width: 70px;
+    }
+
+    .Year-Month input {
+        width: 30% !important;
+    }
+
+    .Year-Month p {
+        font-size: 1.5rem;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-top: 20px;
+    }
+
+    .card-data input::placeholder {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (900px <=width <=1200px) {
+    .payment {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .payment form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 700px;
+        font-size: 1.5rem;
+    }
+
+    .payment input {
+        width: 100%;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .payment-inputs-container {
+        width: 70%;
+        height: 300px;
+    }
+
+    .payment button {
+        width: 80%;
+        height: 40px;
+        font-size: 1.75rem;
+    }
+
+    .payment-buttons-container {
+        width: 70%;
+        height: 150px;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .payment p {
+        margin-left: 20px;
+        margin-top: 3px;
+        font-size: 1rem;
+    }
+
+    .payment img {
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-data img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .container {
+        width: 90%;
+        display: block;
+    }
+
+    .personal-info {
+        width: 100%;
+    }
+
+    .personal-info h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .location h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .time {
+        width: 100%;
+    }
+
+    .time h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .card-data {
+        width: 100%;
+        height: 200px;
+        border-radius: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 5px;
+    }
+
+    .card-data input {
+        width: 100%;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
+    .card-data p {
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        font-size: 1rem;
+    }
+
+    .Year-Month {
+        width: 90%;
+        margin-right: 5px;
+    }
+
+    .CVV {
+        margin-top: 10px;
+    }
+
+    .Year-Month input {
+        width: 30% !important;
+    }
+
+    .Year-Month p {
+        font-size: 1.5rem;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-top: 20px;
+    }
+
+    .card-data input::placeholder {
+        font-size: 0.70rem;
+    }
+}
+
+@media only screen and (1200px <=width <=1536px) {
+    .payment {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .payment form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 650px;
+        font-size: 1.5rem;
+    }
+
+    .payment input {
+        width: 100%;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .payment-inputs-container {
+        width: 70%;
+        height: 300px;
+    }
+
+    .payment button {
+        width: 80%;
+        height: 40px;
+        font-size: 1.75rem;
+    }
+
+    .payment-buttons-container {
+        width: 70%;
+        height: 150px;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .payment p {
+        margin-left: 20px;
+        margin-top: 3px;
+        font-size: 1rem;
+    }
+
+    .payment img {
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-data img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .container {
+        width: 90%;
+        display: block;
+    }
+
+    .personal-info {
+        width: 100%;
+    }
+
+    .personal-info h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .location h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .time {
+        width: 100%;
+    }
+
+    .time h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .card-data {
+        width: 40%;
+        height: 200px;
+        border-radius: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .card-data input {
+        width: 100%;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
+    .card-data p {
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        font-size: 1rem;
+    }
+
+    .Year-Month {
+        width: 90%;
+        margin-right: 5px;
+    }
+
+    .CVV {
+        margin-top: 10px;
+    }
+
+    .CVV input {
+        width: 50%;
+    }
+
+    .Year-Month input {
+        width: 20% !important;
+    }
+
+    .Year-Month p {
+        font-size: 1.5rem;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-top: 20px;
+    }
+
+    .card-data input::placeholder {
+        font-size: 0.70rem;
+    }
+}

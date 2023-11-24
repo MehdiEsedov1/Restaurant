@@ -1,0 +1,63 @@
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-4 .MuiPaper-root {
+    cursor: pointer;
+}
+
+.papers {
+    width: 15rem;
+    height: 80%;
+    background-color: rgb(1, 74, 1) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.papers:hover {
+    background-color: rgb(1, 109, 1) !important;
+    box-shadow: 0px 0px 20px 0;
+    transition: all 0.4s ease-in;
+}
+
+@media only screen and (0 <=width <=900px) {
+    .papers {
+        width: 7.5rem;
+    }
+
+    .menu-4-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    #paper-3 {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (900px <=width <=1200px) {
+    .papers {
+        width: 10rem;
+    }
+}
+
+@media only screen and (1200px <=width <=1536px) {
+    .papers {
+        width: 12.5rem;
+        height: 95%;
+    }
+}

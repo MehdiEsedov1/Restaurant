@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# How to start project
+
+You need to install json-server from npm because I used a fake REST API for this project.
+
+You must write this code to your terminal to activate json-server : json-server --watch db.json.
+
+After that you must start react project itself.
+
 ## Available Scripts
 
 In the project directory, you can run:

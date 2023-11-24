@@ -1,0 +1,37 @@
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    margin-top: 50px;
+    width: 80%;
+    height: 65vh;
+    background-color: rgb(1, 74, 1);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-infos-container {
+    width: 80%;
+    margin-top: 25px;
+    border-bottom: 1px white solid;
+    padding-bottom: 10px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.profile-infos-container h4 {
+    color: white;
+    white-space: pre-line;
+    display: block;
+    overflow-wrap: break-word;
+}

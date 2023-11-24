@@ -1,0 +1,156 @@
+.Basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.Basket input {
+    width: 200px;
+    height: 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: green solid 1px;
+}
+
+.Basket input::placeholder {
+    color: green;
+}
+
+.Basket input:focus {
+    outline: none;
+}
+
+.MuiGrid-item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.MuiCard-root {
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.Basket-card-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.total {
+    width: 300px;
+    height: 50px;
+    background-color: whitesmoke;
+    border: 3px rgb(1, 74, 1) solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.total .MuiTypography-root {
+    color: rgb(1, 74, 1) !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+@media only screen and (0 <=width <=900px) {
+
+    .Basket input {
+        width: 150px;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
+    .MuiCard-root {
+        width: 400px;
+        height: 400px;
+    }
+
+    .Basket-card-button-container {
+        width: 500px;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .total {
+        width: 225px;
+        height: 40px;
+    }
+
+    .total .MuiTypography-root {
+        font-size: 1.5rem;
+    }
+
+    .Basket .MuiCardMedia-root {
+        height: 200px;
+    }
+}
+
+@media only screen and (900px <=width <=1200px) {
+
+    .Basket input {
+        width: 175px;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
+    .MuiCard-root {
+        width: 400px;
+        height: 400px;
+    }
+
+    .Basket-card-button-container {
+        width: 500px;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .total {
+        width: 225px;
+        height: 40px;
+    }
+
+    .total .MuiTypography-root {
+        font-size: 1.5rem;
+    }
+
+    .Basket .MuiCardMedia-root {
+        height: 200px;
+    }
+}
+
+@media only screen and (1200px <=width <=1536px) {
+    .Basket input {
+        width: 175px;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
+    .MuiCard-root {
+        width: 375px;
+        height: 375px;
+    }
+
+    .Basket-card-button-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .total {
+        width: 225px;
+        height: 40px;
+    }
+
+    .total .MuiTypography-root {
+        font-size: 1.5rem;
+    }
+
+    .Basket .MuiCardMedia-root {
+        height: 150px;
+    }
+}

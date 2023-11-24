@@ -1,0 +1,261 @@
+.footer {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(1, 74, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-left {
+    width: 35%;
+    height: 100%;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+}
+
+.footer-center {
+    width: 35%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-center a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer-center a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s ease-in;
+    transform: translateY(28px);
+}
+
+.footer-center a:hover::before {
+    width: 70%;
+}
+
+.footer-right {
+    width: 30%;
+    height: 100%;
+}
+
+.footer-img {
+    width: 120px;
+    height: 120px;
+}
+
+.footer-about {
+    margin-left: 30px;
+    width: 50%;
+}
+
+.footer .MuiTypography-root {
+    font-weight: 600;
+    color: rgb(194, 194, 194);
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.footer-social-medias {
+    margin-left: 30px;
+    margin-top: 50px;
+    display: flex;
+    color: white;
+    font-size: 4rem;
+    width: 45%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 200px;
+    border-bottom: 2px white solid;
+}
+
+.footer-sections {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-section-container {
+    width: 100%;
+    height: 27.5%;
+    display: flex;
+}
+
+.map {
+    position: absolute;
+    right: 25px;
+    top: -250px;
+    width: 600px;
+    height: 450px;
+    z-index: 10;
+    border: 15px rgb(3, 129, 3) solid;
+    border-radius: 18px;
+}
+
+@media only screen and (0 <=width <=900px) {
+    .footer {
+        width: 100%;
+        height: 500px;
+    }
+
+    .footer-left {
+        width: 35%;
+        height: 100%;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+    }
+
+    .footer-img {
+        width: 90px;
+        height: 90px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .footer-center {
+        width: 35%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-center a {
+        display: block;
+        width: 150px;
+        height: 30px;
+        position: relative;
+        font-size: 1rem;
+    }
+
+    .footer-center a::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 100%;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.4s ease-in;
+        transform: translateY(28px);
+    }
+
+    .footer-center a:hover::before {
+        width: 70%;
+    }
+
+    .footer-right {
+        width: 30%;
+        height: 100%;
+    }
+
+    .footer-about {
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+
+    .footer .MuiTypography-root {
+        font-weight: 600;
+        color: rgb(194, 194, 194);
+        font-size: 0.75rem;
+        line-height: 1.37rem;
+    }
+
+    .footer-social-medias {
+        margin: auto;
+        width: 275px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 0.1rem !important;
+    }
+
+    .footer-sections {
+        width: 200px !important;
+    }
+
+    .footer-sections a {
+        width: 100px;
+    }
+
+    .footer-social-medias svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .map {
+        width: 150px;
+        height: 150px;
+        right: 25px;
+        top: -40px;
+        border: 5px rgb(3, 129, 3) solid;
+
+    }
+
+    .footer-section-container {
+        margin-top: 29px;
+    }
+}
+
+@media only screen and (900px <=width <=1200px) {
+    .map {
+        width: 400px;
+        height: 300px;
+        right: 25px;
+        top: -150px;
+    }
+}
+
+@media only screen and (1200px <=width <=1536px) {
+    .map {
+        width: 500px;
+        height: 350px;
+        right: 25px;
+        top: -200px;
+    }
+
+    .footer-social-medias {
+        width: 325px;
+    }
+}
